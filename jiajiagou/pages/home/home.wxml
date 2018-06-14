@@ -36,7 +36,7 @@
   <scroll-view scroll-x="true">
     <view class="goods">
       <block wx:for-items="{{goodsItems}}" wx:key="name">
-        <view class="goods-item" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <view class="goods-item" data-type="{{item.name}}" data-typeid="{{item.typeId}}" bindtap='click'>
           <image src="{{item.imageurl}}" class="goods-image" />
           <text>{{item.name}}</text>
           <p>{{item.newprice}}</p>
